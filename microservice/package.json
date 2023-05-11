@@ -4,10 +4,12 @@
 	"description": "",
 	"main": "index.js",
 	"workspaces": [
-		"characters"
+		"characters",
+		"films"
 	],
 	"scripts": {
-		"start:characters": "npm run start -w characters"
+		"start:characters": "npm run start -w characters",
+		"start:films": "npm run start -w films"
 	},
 	"keywords": [],
 	"author": "Jau2002 <idamendjaume@gmail.com> (https://www.linkedin.com/in/jaumesuarez)",
