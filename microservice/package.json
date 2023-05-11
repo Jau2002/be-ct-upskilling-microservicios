@@ -5,11 +5,13 @@
 	"main": "index.js",
 	"workspaces": [
 		"characters",
-		"films"
+		"films",
+		"planets"
 	],
 	"scripts": {
 		"start:characters": "npm run start -w characters",
-		"start:films": "npm run start -w films"
+		"start:films": "npm run start -w films",
+		"start:planets": "npm run start -w planets"
 	},
 	"keywords": [],
 	"author": "Jau2002 <idamendjaume@gmail.com> (https://www.linkedin.com/in/jaumesuarez)",
