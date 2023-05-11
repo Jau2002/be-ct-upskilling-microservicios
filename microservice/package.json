@@ -1,0 +1,15 @@
+{
+	"name": "microservice",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"workspaces": [
+		"characters"
+	],
+	"scripts": {
+		"start:characters": "npm run start -w characters"
+	},
+	"keywords": [],
+	"author": "Jau2002 <idamendjaume@gmail.com> (https://www.linkedin.com/in/jaumesuarez)",
+	"license": "MIT"
+}
