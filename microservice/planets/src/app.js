@@ -1,6 +1,6 @@
 const express = require('express');
 const morganBody = require('morgan-body');
-const planetsRouter = require('./routes/films.route');
+const planetsRouter = require('./routes/planets.route');
 
 const app = express();
 
