@@ -6,9 +6,11 @@
 	"workspaces": [
 		"characters",
 		"films",
-		"planets"
+		"planets",
+		"gateway"
 	],
 	"scripts": {
+		"serve": "npm run serve -w gateway",
 		"start:characters": "npm run start -w characters",
 		"start:films": "npm run start -w films",
 		"start:planets": "npm run start -w planets"

@@ -1,0 +1,19 @@
+{
+	"name": "gateway",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"serve": "node \"./index.js\""
+	},
+	"keywords": [],
+	"author": "Jau2002 <idamendjaume@gmail.com> (https://www.linkedin.com/in/jaumesuarez)",
+	"license": "MIT",
+	"dependencies": {
+		"express": "4.18.2",
+		"http-proxy-middleware": "2.0.6"
+	},
+	"devDependencies": {
+		"morgan-body": "2.6.9"
+	}
+}
