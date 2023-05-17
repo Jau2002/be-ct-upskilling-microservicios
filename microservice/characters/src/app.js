@@ -20,4 +20,6 @@ morganBody(app, morganBodyOptions);
 
 app.use('/characters', characterRouter);
 
+app.use('*', (_, res) => res.status(404).send('Not Found'));
+
 module.exports = app;

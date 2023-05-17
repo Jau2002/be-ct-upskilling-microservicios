@@ -20,4 +20,6 @@ morganBody(app, morganBodyOptions);
 
 app.use('/planets', planetsRouter);
 
+app.use('*', (_, res) => res.status(404).send('Not Found'));
+
 module.exports = app;
