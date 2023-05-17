@@ -1,6 +1,6 @@
 const express = require('express');
 const morganBody = require('morgan-body');
-const planetsRouter = require('./routes/planets.route');
+const filmsRouter = require('../routes/films.route');
 
 const app = express();
 
@@ -18,8 +18,12 @@ const morganBodyOptions = {
 
 morganBody(app, morganBodyOptions);
 
-app.use('/planets', planetsRouter);
+app.use('/films', filmsRouter);
 
 app.use('*', (_, res) => res.status(404).send('Not Found'));
+
+app.use((err, _req, res, _next) =>
+	res.status(err.statusCode || 500).json({ error: true, message: err.message })
+);
 
 module.exports = app;
