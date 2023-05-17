@@ -6,8 +6,8 @@ COPY package*.json .
 
 RUN npm install --only=prod
 
-COPY index.js .
+COPY src/ .
 
-EXPOSE 3000
+EXPOSE 8000
 
-CMD [ "npm run serve" ]
+CMD [ "npm run start" ]
