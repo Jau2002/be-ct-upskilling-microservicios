@@ -1,0 +1,21 @@
+{
+	"name": "database",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node \"./src/index.js\"",
+		"dev": "node --watch \"./src/index.js\" --trace-warnings"
+	},
+	"keywords": [],
+	"author": "Jau2002 <idamendjaume@gmail.com> (https://www.linkedin.com/in/jaumesuarez)",
+	"license": "MIT",
+	"dependencies": {
+		"dotenv": "16.0.3",
+		"express": "4.18.2",
+		"mongoose": "7.1.1"
+	},
+	"devDependencies": {
+		"morgan-body": "2.6.9"
+	}
+}

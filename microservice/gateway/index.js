@@ -17,7 +17,7 @@ morganBody(app, morganBodyOptions);
 app.use(
 	'/films',
 	createProxyMiddleware({
-		target: 'http://localhost:3001',
+		target: 'http://films:3001',
 		changeOrigin: true,
 	})
 );
@@ -25,7 +25,7 @@ app.use(
 app.use(
 	'/characters',
 	createProxyMiddleware({
-		target: 'http://localhost:8008',
+		target: 'http://characters:8008',
 		changeOrigin: true,
 	})
 );
@@ -33,7 +33,7 @@ app.use(
 app.use(
 	'/planets',
 	createProxyMiddleware({
-		target: 'http://localhost:8000',
+		target: 'http://planets:8000',
 		changeOrigin: true,
 	})
 );

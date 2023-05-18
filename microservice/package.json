@@ -7,10 +7,12 @@
 		"characters",
 		"films",
 		"planets",
-		"gateway"
+		"gateway",
+		"database"
 	],
 	"scripts": {
 		"serve": "npm run serve -w gateway",
+		"start": "npm run start -w database",
 		"start:characters": "npm run start -w characters",
 		"start:films": "npm run start -w films",
 		"start:planets": "npm run start -w planets"
